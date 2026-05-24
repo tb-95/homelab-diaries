@@ -59,12 +59,12 @@ sudo systemctl reload-or-restart systemd-resolved
 
 ## AHA! Moments & My Thoughts
 
-- **"What actually is DNS and why should I care?" – DNS is the phonebook of the internet. When you type google.com, DNS translates it to an IP address. If you control that phonebook, you can cross out ad-serving numbers. That's why DNS filtering is so powerful – it blocks the ad before it even loads.
-- **"Why not use Google DNS (8.8.8.8)?" – Google collects data. Quad9 (9.9.9.9) and Cloudflare (1.1.1.1) promise not to sell your browsing history. Quad9 even actively blocks malware domains. If you're building your own cloud for privacy, you can't hand your DNS to Google.
-- **"What's this port 53 thing, and why do I have to free it up?" – Port 53 is the standard port for DNS. On Ubuntu, it's hogged by systemd-resolved – a local resolver. I had to "turn it off" so AdGuard could use that port. This was the first time I had to resolve a port conflict.
-- **"Why map 3001:80 and not 80:80?" – Port 80 is reserved for the future reverse proxy (NPM). AdGuard got port 3001 so it wouldn't clash. This was my first lesson in port planning – every service needs its own.
-- **"76.76.2.2 as backup DNS?" – If AdGuard goes down, I still want a DNS that blocks ads. Control D (76.76.2.2) does that – it's not just a "dumb" resolver, it has built-in filters. So protection continues even when the server is offline.
-- **"How do I know it's working?" – The best test: open an ad-heavy website and see empty boxes. And in the AdGuard dashboard, watch the blocked query counter climb. It's more satisfying than Netflix.
+- **"What actually is DNS and why should I care?"** – DNS is the phonebook of the internet. When you type google.com, DNS translates it to an IP address. If you control that phonebook, you can cross out ad-serving numbers. That's why DNS filtering is so powerful – it blocks the ad before it even loads.
+- **"Why not use Google DNS (8.8.8.8)?"** – Google collects data. Quad9 (9.9.9.9) and Cloudflare (1.1.1.1) promise not to sell your browsing history. Quad9 even actively blocks malware domains. If you're building your own cloud for privacy, you can't hand your DNS to Google.
+- **"What's this port 53 thing, and why do I have to free it up?"** – Port 53 is the standard port for DNS. On Ubuntu, it's hogged by systemd-resolved – a local resolver. I had to "turn it off" so AdGuard could use that port. This was the first time I had to resolve a port conflict.
+- **"Why map 3001:80 and not 80:80?"** – Port 80 is reserved for the future reverse proxy (NPM). AdGuard got port 3001 so it wouldn't clash. This was my first lesson in port planning – every service needs its own.
+- **"76.76.2.2 as backup DNS?"** – If AdGuard goes down, I still want a DNS that blocks ads. Control D (76.76.2.2) does that – it's not just a "dumb" resolver, it has built-in filters. So protection continues even when the server is offline.
+- **"How do I know it's working?"** – The best test: open an ad-heavy website and see empty boxes. And in the AdGuard dashboard, watch the blocked query counter climb. It's more satisfying than Netflix.
 
 ## Why This Service Matters
 

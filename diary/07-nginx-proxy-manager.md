@@ -44,12 +44,12 @@ services:
 
 ## AHA! Moments & My Thoughts
 
-- **"Why can't I just use ports?" – I could, but that's not how the internet works. Nobody types google.com:443. A reverse proxy lets me use standard ports (80, 443) and route by name. It feels professional.
-- **"The latest image didn't work." – NPM froze on "Setting ownership" when I first tried to start it. We had to search forums and find that version 2.11.2 was stable in LXC containers. Lesson: latest doesn't always mean "best for my setup". Sometimes a specific older version is safer.
-- **"What is network_mode: host?" – Docker normally isolates containers in their own virtual network. But my NPM needed to reach Jellyfin on a different IP (192.168.1.231). With host mode, NPM shares the LXC's network and can see the whole home network. It's not perfect, but it's simple and works.
-- **"I chose jelly.fin instead of jellyfin.local." – It's shorter, easier to remember, and I learned that in my own network I can invent any domain I want. The router's DNS (AdGuard) will resolve it. I'm the master of my own domain… literally.
-- **"How does the magic work?" – When I type jelly.fin in the browser, the query goes: My browser → AdGuard (resolves to 192.168.1.222) → NPM (sees the Host: jelly.fin header) → forwards to 192.168.1.231:8096. Three steps, but it feels like one.
-- **"Why put NPM in its own LXC?" – Because it's the entry point for all web traffic. If it goes down, I can't reach anything by name. Isolating it means a problem in another container (like a misconfigured Matrix server) won't take down access to Jellyfin or AdGuard.
+- **"Why can't I just use ports?"** – I could, but that's not how the internet works. Nobody types google.com:443. A reverse proxy lets me use standard ports (80, 443) and route by name. It feels professional.
+- **"The latest image didn't work."** – NPM froze on "Setting ownership" when I first tried to start it. We had to search forums and find that version 2.11.2 was stable in LXC containers. Lesson: latest doesn't always mean "best for my setup". Sometimes a specific older version is safer.
+- **"What is network_mode: host?"** – Docker normally isolates containers in their own virtual network. But my NPM needed to reach Jellyfin on a different IP (192.168.1.231). With host mode, NPM shares the LXC's network and can see the whole home network. It's not perfect, but it's simple and works.
+- **"I chose jelly.fin instead of jellyfin.local."** – It's shorter, easier to remember, and I learned that in my own network I can invent any domain I want. The router's DNS (AdGuard) will resolve it. I'm the master of my own domain… literally.
+- **"How does the magic work?"** – When I type jelly.fin in the browser, the query goes: My browser → AdGuard (resolves to 192.168.1.222) → NPM (sees the Host: jelly.fin header) → forwards to 192.168.1.231:8096. Three steps, but it feels like one.
+- **"Why put NPM in its own LXC?"** – Because it's the entry point for all web traffic. If it goes down, I can't reach anything by name. Isolating it means a problem in another container (like a misconfigured Matrix server) won't take down access to Jellyfin or AdGuard.
 
 ## Why This Service Matters
 
