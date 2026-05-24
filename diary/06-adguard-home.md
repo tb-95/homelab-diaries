@@ -39,13 +39,13 @@ services:
 
 ## DNS Blocklists
 
-- **HaGeZi's Pro++
-- **OISD Big
-- **AdGuard DNS filter
-- **AdAway
-- **Steven Black's
-- **Peter Lowe's
-- **NoCoin (cryptominer protection)
+- **HaGeZi's Pro++**
+- **OISD Big**
+- **AdGuard DNS filter**
+- **AdAway**
+- **Steven Black's**
+- **Peter Lowe's**
+- **NoCoin (cryptominer protection)**
 
 ## Port 53 fix (Ubuntu 26.04)
 
