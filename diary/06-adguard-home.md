@@ -35,6 +35,7 @@ services:
     volumes:
       - /opt/docker/adguardhome/work:/opt/adguardhome/work
       - /opt/docker/adguardhome/conf:/opt/adguardhome/conf
+```
 
 ## DNS Blocklists
 
@@ -54,6 +55,7 @@ echo -e "[Resolve]\nDNS=76.76.2.2\nDNSStubListener=no" | sudo tee /etc/systemd/r
 sudo rm -f /etc/resolv.conf
 echo "nameserver 76.76.2.2" | sudo tee /etc/resolv.conf
 sudo systemctl reload-or-restart systemd-resolved
+```
 
 ## AHA! Moments & My Thoughts
 

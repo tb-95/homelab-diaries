@@ -32,6 +32,7 @@ services:
       - /opt/docker/npm/letsencrypt:/etc/letsencrypt
     environment:
       - TZ=Europe/Prague
+```
 
 ## Proxy Host for Jellyfin
 
