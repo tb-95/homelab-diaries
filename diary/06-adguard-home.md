@@ -48,7 +48,7 @@ services:
 
 ## Port 53 fix (Ubuntu 26.04)
 
-bash
+```bash
 sudo mkdir -p /etc/systemd/resolved.conf.d
 echo -e "[Resolve]\nDNS=76.76.2.2\nDNSStubListener=no" | sudo tee /etc/systemd/resolved.conf.d/adguardhome.conf
 sudo rm -f /etc/resolv.conf
