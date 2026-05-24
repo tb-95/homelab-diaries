@@ -24,6 +24,7 @@ I also kept thinking about my career. I didn't just want a server; I wanted to *
 - **"What even is Proxmox?"** – At first, it sounded scary. But it's just a Debian-based OS with a web interface that manages containers and VMs. It's like having a mini data center on my laptop. The ability to snapshot a container before making changes, and roll back if I break something, gave me confidence to experiment.
 - **"How will the containers see the NAS?"** – Learned about **bind mounts** at the Proxmox level. The NAS is mounted once on the host, and then I just "pass through" the folders to any container that needs them. No more fstab inside every server!
 - **RAM and future-proofing** – I considered upgrading from 2x8GB to 1x16GB + 8GB, but we discovered that mixing sizes would slow down the dual-channel memory. Stuck with 2x8GB, but the analysis showed 16 GB is plenty for the services I planned. This was my first taste of hardware resource planning.
+- **"I don't remember all the commands – and that's okay."** – Some people think IT means memorizing thousands of commands. For me, it's about understanding the logic. When I see a `docker-compose.yml` file or an fstab entry, I can most of the time read it like a recipe. I know what each ingredient does and why it's there. If I forget a command, I look it up. This diary is my memory. The skill isn't reciting syntax – it's knowing what to ask and where to look.
 
 ## Why This Phase Matters
 
