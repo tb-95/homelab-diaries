@@ -27,4 +27,4 @@ Thumbs.db
 # ===== Sensitive data (hesla, tokeny) =====
 .env
 *.secret
-*.pem
+*.pem<

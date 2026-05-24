@@ -23,4 +23,4 @@ Replace paid services (Netflix, Google Photos) with my own server. Start simple,
 
 A basic home server running on an old laptop. It worked, but I knew I would soon outgrow it. The real journey was about to begin.
 
-→ Next: [Phase 2: Leaving CasaOS for Docker and Portainer](02-docker-portainer.md)
+→ Next: [Phase 2: First Services and First Questions](02-casaos-first-services.md)
