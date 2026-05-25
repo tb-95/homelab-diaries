@@ -52,4 +52,4 @@ This incident was a perfect lesson in how each layer of a complex system (Proxmo
 
 Proxmox is back to its clean state. The NAS drives now spin down after a period of inactivity. I have a clear path for performing backups without disturbing the quiet of my homelab. A valuable lesson was learned, and a solid backup habit was validated.
 
-→ Next: Phase 9: Jellyfin – The Battle for Hardware Acceleration
+→ Next: [Phase 9: Jellyfin – The Battle for Hardware Acceleration](09-jellyfin.md)
