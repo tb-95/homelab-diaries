@@ -31,4 +31,4 @@ This was the turning point. I stopped using "beginner tools" and started using t
 
 A clean Ubuntu Server running Docker and Portainer, with AdGuard Home and Jellyfin managed via `docker-compose`. Ready for the next evolution: Proxmox.
 
-→ Next: [Phase 4: Hardware Upgrade and Proxmox](04-new-hardware-proxmox.md)
+→ Next: [Phase 4: Hardware Upgrade and Proxmox](04-hardware-upgrade-proxmox.md)
