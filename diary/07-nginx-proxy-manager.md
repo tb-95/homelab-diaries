@@ -59,4 +59,4 @@ Nginx Proxy Manager is the gateway. It makes my services accessible and user-fri
 
 Reverse proxy running. So far it only points to Jellyfin (which isn't even built yet!), but the infrastructure is ready. Adding new services will be a matter of creating another Proxy Host and DNS rewrite.
 
-→ Next: [Phase 8: Jellyfin – Media Server in a Box](https://08-jellyfin.md)
+→ Next: [Phase 8: The Great NAS Wake-Up and the Proxmox Storage Lesson](https://08-proxmox-nas-storage-issue.md)
