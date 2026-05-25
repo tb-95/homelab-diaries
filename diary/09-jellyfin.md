@@ -82,7 +82,7 @@ Now, when subtitles are downloaded through OpenSubtitles, the plugin prioritizes
 
 - **"Why is this so hard? The GPU is right there."** – This was my first deep dive into the difference between privileged and unprivileged containers, cgroups, and device nodes. The mode=0666 trick felt like a magic spell after a dozen failed attempts. I learned that sometimes the solution is a single attribute you just didn't know existed.
 - **"QSV or VA-API?"** – For my hardware, QSV is the primary choice, but I now understand when and why to switch to VA-API. The key is matching the configuration to the specific workload.
-- **"The subtitle problem wasn't really about the GPU at all." – The black screen was a symptom, not the root cause. The real issue was that the Android TV client couldn't handle .ASS subtitles efficiently. Downloading .SRT subtitles via OpenSubtitles was the elegant workaround. I learned that sometimes you need to solve the problem at a different layer than where the symptom appears.
+- **"The subtitle problem wasn't really about the GPU at all."** – The black screen was a symptom, not the root cause. The real issue was that the Android TV client couldn't handle .ASS subtitles efficiently. Downloading .SRT subtitles via OpenSubtitles was the elegant workaround. I learned that sometimes you need to solve the problem at a different layer than where the symptom appears.
 - **"I prefer official clients when possible."** – Rather than switching to a third-party player like Vimu or Nova, I found a way to make the official Jellyfin Android TV client work perfectly. This feels like a more sustainable solution for the long term.
 
 ## Why This Phase Matters
